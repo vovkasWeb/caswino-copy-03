@@ -1,0 +1,793 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>RooSpinny.com - Aussie Lotto | Your Ticket to Big Wins!</title>
+		<link rel="icon" href="./assets/images/ico3.png" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+		/>
+		<link
+			rel="stylesheet"
+			href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+		/>
+		<link
+			href="https://fonts.googleapis.com/css2?family=Poppins:wght@700;800&family=Roboto:wght@400;500;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="stylesheet" href="./assets/css/style.css" />
+	</head>
+
+	<body>
+		<div id="age-verification" class="popup-overlay">
+			<div class="popup-content">
+				<div class="popup-header">
+					<h2>Age Verification</h2>
+				</div>
+				<div class="popup-body">
+					<p>You must be 18 or over to enter</p>
+					<p>
+						This platform is exclusively for adults aged 18+. Minors are strictly prohibited from accessing or participating. We advocate for safe and responsible gaming practices.
+					</p>
+					<div class="popup-buttons">
+						<button id="age-yes" class="btn btn-primary">Yes, I'm 18+</button>
+						<button id="age-no" class="btn btn-secondary">
+							No, Take Me Back
+						</button>
+					</div>
+				</div>
+			</div>
+		</div>
+		<header class="rsn-header">
+			<div class="container">
+				<div class="row align-items-center">
+					<div class="col-md-6">
+						<a href="./?age-verification=true" class="rsn-logo">Roo<span>Spinny</span></a>
+					</div>
+					<div class="col-md-6 text-end">
+						<button
+							class="rsn-btn-auth rsn-btn-login me-2"
+							data-bs-toggle="modal"
+							data-bs-target="#authModal"
+						>
+							Sign In
+						</button>
+						<button
+							class="rsn-btn-auth rsn-btn-register"
+							data-bs-toggle="modal"
+							data-bs-target="#registerModal"
+						>
+							Join Now
+						</button>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<nav class="rsn-main-nav">
+			<div class="container">
+				<div class="row">
+					<div class="col-12">
+						<div class="d-flex flex-wrap">
+							<a href="./?age-verification=true">Main</a>
+							<a href="./?age-verification=true#about">Who We Are</a>
+							<a href="./?age-verification=true#results">Draw Results</a>
+							<a href="./?age-verification=true#faq">Questions</a>
+							<a href="./?age-verification=true#how-to-play">How It Works</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div class="rsn-container-main my-4">
+			<section id="home" class="rsn-hero">
+				<div class="container">
+					<div class="row">
+						<div class="col-12 rsn-hero-content">
+							<h1>Experience the Excitement of Australia's Premier Lottery!</h1>
+							<p>
+								Become part of a vibrant community of winners at RooSpinny. With
+								two draws every week, your next big win could be just a spin
+								away!
+							</p>
+							<button
+								class="rsn-btn-hero"
+								data-bs-toggle="modal"
+								data-bs-target="#registerModal"
+							>
+								Start Playing
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="about" class="rsn-about section-padding">
+				<div class="container">
+					<div class="row align-items-center">
+						<div class="col-lg-6">
+							<div class="rsn-about-img">
+								<img
+									src="./assets/images/about.png"
+									alt="Learn about RooSpinny Lottery"
+									class="img-fluid"
+								/>
+							</div>
+						</div>
+						<div class="col-lg-6">
+							<div class="rsn-about-content">
+								<h2 class="rsn-section-title">Who We Are</h2>
+								<p>
+									Since 2010, RooSpinny has been redefining the lottery
+									experience in Australia. Over AU$10 million in prizes have
+									been awarded to lucky participants nationwide. Our signature
+									spinning wheel brings a fresh twist to classic lotto fun.
+								</p>
+								<p>
+									We operate under the strict oversight of the Australian
+									Lottery Commission, ensuring fairness, openness, and
+									life-changing opportunities for all our players.
+								</p>
+								<button
+									class="rsn-btn-hero mt-3"
+									data-bs-toggle="modal"
+									data-bs-target="#registerModal"
+								>
+									Join the Game
+								</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="features" class="rsn-features section-padding">
+				<div class="container">
+					<div class="row justify-content-center">
+						<div class="col-lg-8 text-center mb-5">
+							<h2 class="rsn-section-title">What Makes RooSpinny Stand Out?</h2>
+							<p class="lead">
+								Discover why we're Australia's most trusted and rewarding
+								lottery
+							</p>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-4 mb-4">
+							<div class="rsn-feature-box">
+								<div class="rsn-feature-icon">
+									<img src="./assets/images/ico1.png" alt="Jackpot Icon" />
+								</div>
+								<h3 class="rsn-feature-title">Huge Prizes</h3>
+								<p>
+									Jackpots begin at AU$1 million and keep growing until someone
+									wins. Our record payout: AU$50 million to a healthcare worker
+									in Sydney!
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 mb-4">
+							<div class="rsn-feature-box">
+								<div class="rsn-feature-icon">
+									<img src="./assets/images/ico2.png" alt="Draws Icon" />
+								</div>
+								<h3 class="rsn-feature-title">Regular Draws</h3>
+								<p>
+									Enjoy more chances to win with draws every Wednesday and
+									Saturday at 8:30 PM AEST.
+								</p>
+							</div>
+						</div>
+						<div class="col-md-4 mb-4">
+							<div class="rsn-feature-box">
+								<div class="rsn-feature-icon">
+									<img src="assets/images/ico3.png" alt="Security Icon" />
+								</div>
+								<h3 class="rsn-feature-title">Safe & Transparent</h3>
+								<p>
+									All games are independently reviewed and use certified random
+									number generators for total fairness.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="results" class="rsn-results section-padding">
+				<div class="container">
+					<h2 class="rsn-section-title">Recent Winning Numbers</h2>
+					<div class="rsn-results-table">
+						<table class="table table-hover">
+							<thead>
+								<tr>
+									<th>Date</th>
+									<th>Numbers</th>
+									<th>Jackpot</th>
+									<th>Winners</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr>
+									<td>Saturday, Mar 10, 2025</td>
+									<td>
+										<span class="rsn-ball">7</span>
+										<span class="rsn-ball">12</span>
+										<span class="rsn-ball">23</span>
+										<span class="rsn-ball">34</span>
+										<span class="rsn-ball">41</span>
+										<span
+											class="rsn-ball"
+											style="
+												background: radial-gradient(
+													circle at 30% 30%,
+													#fff,
+													var(--accent)
+												);
+											"
+											>15</span
+										>
+									</td>
+									<td>AU$12,500,000</td>
+									<td>1 (QLD)</td>
+								</tr>
+								<tr>
+									<td>Wednesday, Jan 7, 2025</td>
+									<td>
+										<span class="rsn-ball">5</span>
+										<span class="rsn-ball">18</span>
+										<span class="rsn-ball">22</span>
+										<span class="rsn-ball">29</span>
+										<span class="rsn-ball">37</span>
+										<span
+											class="rsn-ball"
+											style="
+												background: radial-gradient(
+													circle at 30% 30%,
+													#fff,
+													var(--accent)
+												);
+											"
+											>11</span
+										>
+									</td>
+									<td>AU$2,000,000</td>
+									<td>3 (NSW, VIC, WA)</td>
+								</tr>
+								<tr>
+									<td>Saturday, Feb 3, 2025</td>
+									<td>
+										<span class="rsn-ball">3</span>
+										<span class="rsn-ball">14</span>
+										<span class="rsn-ball">27</span>
+										<span class="rsn-ball">31</span>
+										<span class="rsn-ball">45</span>
+										<span
+											class="rsn-ball"
+											style="
+												background: radial-gradient(
+													circle at 30% 30%,
+													#fff,
+													var(--accent)
+												);
+											"
+											>9</span
+										>
+									</td>
+									<td>AU$8,750,000</td>
+									<td>0 (Rollover)</td>
+								</tr>
+							</tbody>
+						</table>
+					</div>
+				</div>
+			</section>
+
+			<section id="faq" class="rsn-faq section-padding">
+				<div class="container">
+					<h2 class="rsn-section-title">Common Questions</h2>
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="accordion" id="faqAccordion">
+								<div class="accordion-item mb-3 border-0">
+									<h3 class="accordion-header" id="headingOne">
+										<button
+											class="rsn-accordion-button collapsed"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#collapseOne"
+											aria-expanded="false"
+											aria-controls="collapseOne"
+										>
+											How do I receive my winnings?
+										</button>
+									</h3>
+									<div
+										id="collapseOne"
+										class="accordion-collapse collapse"
+										aria-labelledby="headingOne"
+										data-bs-parent="#faqAccordion"
+									>
+										<div class="accordion-body">
+											<p>
+												Prizes up to AU$5,000 are instantly credited to your
+												RooSpinny account. For larger amounts, you'll need to
+												fill out a claim form and verify your identity. Jackpot
+												winners are contacted by our team within 24 hours of the
+												draw.
+											</p>
+											<p>
+												All prizes must be claimed within one year from the draw
+												date.
+											</p>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item mb-3 border-0">
+									<h3 class="accordion-header" id="headingTwo">
+										<button
+											class="accordion-button collapsed"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#collapseTwo"
+											aria-expanded="false"
+											aria-controls="collapseTwo"
+										>
+											What are my chances of winning?
+										</button>
+									</h3>
+									<div
+										id="collapseTwo"
+										class="accordion-collapse collapse"
+										aria-labelledby="headingTwo"
+										data-bs-parent="#faqAccordion"
+									>
+										<div class="accordion-body">
+											<p>
+												The odds of winning any prize in RooSpinny are 1 in 15.
+												The jackpot odds are about 1 in 8 million. Lower prize
+												tiers have better odds:
+											</p>
+											<ul>
+												<li>Match 3: 1 in 56</li>
+												<li>Match 4: 1 in 1,032</li>
+												<li>Match 5: 1 in 55,492</li>
+											</ul>
+										</div>
+									</div>
+								</div>
+								<div class="accordion-item mb-3 border-0">
+									<h3 class="accordion-header" id="headingThree">
+										<button
+											class="accordion-button collapsed"
+											type="button"
+											data-bs-toggle="collapse"
+											data-bs-target="#collapseThree"
+											aria-expanded="false"
+											aria-controls="collapseThree"
+										>
+											Can I participate from outside Australia?
+										</button>
+									</h3>
+									<div
+										id="collapseThree"
+										class="accordion-collapse collapse"
+										aria-labelledby="headingThree"
+										data-bs-parent="#faqAccordion"
+									>
+										<div class="accordion-body">
+											<p>
+												Currently, RooSpinny is only open to players who are
+												physically in Australia. You must be at least 18 years
+												old and provide valid Australian ID for prizes over
+												AU$1,000.
+											</p>
+											<p>We hope to expand internationally soon—stay tuned!</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="how-to-play" class="rsn-how-to-play section-padding">
+				<div class="container">
+					<h2 class="section-title">How to Join RooSpinny</h2>
+					<div class="row">
+						<div class="col-lg-8 mx-auto">
+							<div class="rsn-step">
+								<div class="rsn-step-number">1</div>
+								<div class="rsn-step-content">
+									<h4>Sign Up</h4>
+									<p>
+										Create your free account using your email and basic info.
+										Confirm your email to get started.
+									</p>
+								</div>
+							</div>
+							<div class="rsn-step">
+								<div class="rsn-step-number">2</div>
+								<div class="rsn-step-content">
+									<h4>Pick Your Numbers</h4>
+									<p>
+										Choose 6 numbers from 1 to 45, or let our Quick Pick tool
+										select them for you at random.
+									</p>
+								</div>
+							</div>
+							<div class="rsn-step">
+								<div class="rsn-step-number">3</div>
+								<div class="rsn-step-content">
+									<h4>Submit Your Entry</h4>
+									<p>
+										Play as many games as you like per draw, or set up recurring
+										entries for convenience.
+									</p>
+								</div>
+							</div>
+							<div class="rsn-step">
+								<div class="rsn-step-number">4</div>
+								<div class="rsn-step-content">
+									<h4>Watch the Results</h4>
+							<div class="step">
+								<div class="step-content">
+									<p>
+										Catch our live draws every Wednesday and Saturday at 8:30 PM
+										AEST, or check the results online anytime.
+									</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section id="support" class="rsn-support section-padding">
+				<div class="container">
+					<h2 class="rsn-section-title">Need Help?</h2>
+					<div class="row">
+						<div class="col-md-4 mb-4">
+							<div class="rsn-support-box">
+								<div class="rsn-support-icon">
+									<i class="fas fa-envelope"></i>
+								</div>
+								<h3>Email Us</h3>
+								<p>We aim to reply to all messages within 24 hours.</p>
+								<p><strong>support@roospinny.com</strong></p>
+							</div>
+						</div>
+						<div class="col-md-4 mb-4">
+							<div class="rsn-support-box">
+								<div class="rsn-support-icon">
+									<i class="fas fa-phone-alt"></i>
+								</div>
+								<h3>Call Support</h3>
+								<p>Available daily from 9AM to 9PM AEST.</p>
+								<p><strong>1800 123 456</strong></p>
+							</div>
+						</div>
+						<div class="col-md-4 mb-4">
+							<div class="rsn-support-box">
+								<div class="rsn-support-icon">
+									<i class="fas fa-shield-alt"></i>
+								</div>
+								<h3>Play Responsibly</h3>
+								<p>We work with GambleAware to encourage safe gaming habits.</p>
+								<p><strong>gambleaware.org.au</strong></p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<footer class="rsn-footer">
+				<div class="container">
+					<div class="row">
+						<div class="col-lg-4 mb-4">
+							<a href="./?age-verification=true" class="rsn-footer-logo">RooSpinny</a>
+							<p>
+								Australia's top lottery since 2017. Fully licensed and regulated
+								by the Australian Lottery Commission.
+							</p>
+							<div class="rsn-social-icons mt-3"></div>
+						</div>
+						<div class="col-lg-2 col-md-4 mb-4">
+							<div class="rsn-footer-links">
+								<h5>Quick Links</h5>
+								<a href="./?age-verification=true">Main</a>
+								<a href="./?age-verification=true#about">Who We Are</a>
+								<a href="./?age-verification=true#results">Draw Results</a>
+								<a href="./?age-verification=true#faq">Questions</a>
+								<a href="./?age-verification=true#how-to-play">How It Works</a>
+							</div>
+						</div>
+						<div class="col-lg-2 col-md-4 mb-4">
+							<div class="rsn-footer-links">
+								<h5>Legal</h5>
+								<a href="./terms.html">User Terms</a>
+								<a href="./policy.html">Privacy Notice</a>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-4 mb-4">
+							<div class="rsn-footer-links">
+								<h5>Help & Support</h5>
+								<a href="mailto:support@roospinny.com">Email Us</a>
+								<a href="tel:+1800858858">Call 1800 858 858</a>
+								<a href="https://www.gambleaware.org/" target="_blank">GambleAware</a>
+							</div>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-12 text-center rsn-copyright">
+							<div class="rsn-footer-imp">
+								<p>
+									<strong>Pause and consider. Play responsibly.</strong><br />
+									If you need confidential help with gambling, call the national
+									helpline at 1800 858 858. More resources are available at
+									GambleAware NSW:
+									<a
+										href="https://www.gambleaware.nsw.gov.au"
+										target="_blank"
+										rel="noopener noreferrer"
+										>gambleaware.nsw.gov.au</a
+									>
+								</p>
+								<p>
+									<strong>BetStop: Australia's Self-Exclusion Register.</strong
+									><br />
+									This free service lets you block access to all licensed online
+									betting sites nationwide. Learn more at
+									<a href="https://www.betstop.gov.au" target="_blank"
+										>betstop.gov.au</a
+									>
+								</p>
+								<p>
+									RooSpinny.com is fully authorized by the
+									<strong>New South Wales Government Department</strong> and
+									regulated by
+									<strong
+										>The New South Wales Independent Liquor & Gaming NSW</strong
+									>. We uphold the highest standards of responsible gaming.
+								</p>
+								<p>
+									Operated by
+									<strong
+										>The Lottery Corporation Limited (ABN 21 081 925
+										706)</strong
+									>. The RooSpinny.com brand and content are intellectual
+									property of <strong>The Lottery Corporation Limited</strong>.
+									All rights reserved.
+								</p>
+								<p>
+									Strict age checks are in place – no one under 18 may
+									participate.
+								</p>
+							</div>
+							<div class="rsn-footer-soc">
+								<a
+									href="https://gamblershelp.com.au/get-help/help-yourself/reset-app/"
+									target="_blank"
+								>
+									<img
+										src="./assets/images/logo-reset-app.svg"
+										alt="Reset App Logo"
+									/>
+								</a>
+								<a href="https://www.gambleaware.org/" target="_blank">
+									<img
+										width="100"
+										src="./assets/images/logo-orange.webp"
+										alt="GambleAware Logo"
+									/>
+								</a>
+								<a href="https://www.vic.gov.au/" target="_blank">
+									<img
+										src="./assets/images/logo-victoria-gov.svg"
+										alt="Victoria Government Logo"
+									/>
+								</a>
+								<a href="https://gamblershelp.com.au/" target="_blank">
+									<img
+										src="./assets/images/logo-gamblers-help.svg"
+										alt="Gamblers Help Logo"
+									/>
+								</a>
+								<div class="soc-block">
+									<img
+										style="filter: none !important"
+										class="age"
+										src="./assets/images/189.webp"
+										alt="18+ Only"
+									/>
+								</div>
+							</div>
+							<p>
+								&copy; 2024 RooSpinny.com. All rights reserved. RooSpinny is a
+								registered trademark.
+							</p>
+						</div>
+					</div>
+				</div>
+			</footer>
+		</div>
+
+		<div
+			class="modal fade"
+			id="registerModal"
+			tabindex="-1"
+			aria-labelledby="registerModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="rsn-modal-content">
+					<div class="rsn-modal-header">
+						<h5 class="modal-title" id="registerModalLabel">
+							Open Your Account
+						</h5>
+						<button
+							type="button"
+							class="btn-close btn-close-white"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="rsn-modal-body" id="registerForm">
+						<form id="registrationForm">
+							<div class="mb-3">
+								<input
+									type="text"
+									class="rsn-form-control"
+									id="registerName"
+									placeholder="Your Full Name"
+									required
+								/>
+							</div>
+							<div class="mb-3">
+								<input
+									type="email"
+									class="rsn-form-control"
+									id="registerEmail"
+									placeholder="Email Address"
+									required
+								/>
+							</div>
+							<div class="mb-3">
+								<input
+									type="password"
+									class="rsn-form-control"
+									id="registerPassword"
+									placeholder="Password"
+									required
+								/>
+							</div>
+							<div class="mb-3">
+								<input
+									type="date"
+									class="rsn-form-control"
+									id="registerDob"
+									required
+								/>
+								<small class="text-muted"
+									>You must be 18 or older to join</small
+								>
+							</div>
+							<div class="form-check mb-3">
+								<input
+									class="form-check-input"
+									type="checkbox"
+									id="termsCheck"
+									required
+								/>
+								<label class="form-check-label" for="termsCheck">
+									I accept the <a href="./terms.html">User Terms</a> and
+									<a href="./policy.html">Privacy Notice</a>
+								</label>
+							</div>
+							<button type="submit" class="rsn-btn-submit">Sign Up</button>
+						</form>
+					</div>
+					<div class="rsn-modal-body d-none" id="registerSuccess">
+						<div class="rsn-success-message">
+							<div class="rsn-success-icon">
+								<i class="fas fa-check-circle"></i>
+							</div>
+							<h3>Registration Complete!</h3>
+							<p>
+								Your account is being reviewed. We'll email you soon. Please
+								check your inbox and spam folder to confirm your account.
+							</p>
+							<button class="rsn-btn-submit" data-bs-dismiss="modal">
+								Close
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div
+			class="modal fade"
+			id="authModal"
+			tabindex="-1"
+			aria-labelledby="authModalLabel"
+			aria-hidden="true"
+		>
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="rsn-modal-content">
+					<div class="rsn-modal-header">
+						<h5 class="modal-title" id="authModalLabel">
+							Sign In to Your Account
+						</h5>
+						<button
+							type="button"
+							class="btn-close btn-close-white"
+							data-bs-dismiss="modal"
+							aria-label="Close"
+						></button>
+					</div>
+					<div class="rsn-modal-body" id="loginForm">
+						<form id="loginForm">
+							<div class="mb-3">
+								<input
+									type="email"
+									class="rsn-form-control"
+									id="loginEmail"
+									placeholder="Email Address"
+									required
+								/>
+							</div>
+							<div class="mb-3">
+								<input
+									type="password"
+									class="rsn-form-control"
+									id="loginPassword"
+									placeholder="Password"
+									required
+								/>
+							</div>
+							<div class="mb-3 form-check">
+								<input
+									type="checkbox"
+									class="form-check-input"
+									id="rememberMe"
+								/>
+								<label class="form-check-label" for="rememberMe"
+									>Keep me signed in</label
+								>
+							</div>
+							<button type="submit" class="rsn-btn-submit">Sign In</button>
+							<div class="text-center mt-3">
+								<a href="./?age-verification=true" class="text-muted"
+									>Forgot your password?</a
+								>
+							</div>
+						</form>
+					</div>
+					<div class="rsn-modal-body d-none" id="loginPending">
+						<div class="rsn-success-message">
+							<div class="rsn-success-icon">
+								<i class="fas fa-hourglass-half"></i>
+							</div>
+							<h3>Account Under Review</h3>
+							<p>
+								Your account is still being processed. This usually takes 1-2
+								business days. We'll notify you by email when your account is
+								ready.
+							</p>
+							<button class="rsn-btn-submit" data-bs-dismiss="modal">
+								Close
+							</button>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+		<script src="./assets/js/main.js"></script>
+	</body>
+</html>
