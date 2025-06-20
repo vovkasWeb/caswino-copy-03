@@ -529,8 +529,6 @@ registrationFor
 		font-size: 0.8rem;
 	}
 }
-
-
 .popup-overlay {
 	position: fixed;
 	top: 0;
@@ -567,6 +565,8 @@ registrationFor
 		transform: translateY(0);
 	}
 }
+
+ 
 .popup-header {
 	background: linear-gradient(135deg,
     #afdb6c,
