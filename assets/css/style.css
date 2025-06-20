@@ -429,12 +429,17 @@ h4 {
 	color: #aaa;
 }
 
-.rsn-modal-content {
+.modal-content {
 	border-radius: 15px;
 	overflow: hidden;
 	border: none;
+	background-color: #a2da5d;
 }
-
+#loginForm .mb-3 input, 
+#registerForm .mb-3 input {
+	background-color: #a2da5d;
+}
+registrationFor
 .rsn-modal-header {
 	background: linear-gradient(135deg, var(--primary), var(--accent));
 	color: white;
@@ -457,8 +462,8 @@ h4 {
 	box-shadow: 0 0 0 0.25rem rgba(233, 57, 70, 0.25);
 }
 
-.rsn-btn-submit {
-	background-color: var(--primary);
+.btn-submit {
+	background-color: #232925;
 	color: white;
 	font-weight: 600;
 	padding: 12px 30px;
