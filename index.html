@@ -615,172 +615,84 @@
 			</footer>
 		</div>
 
-		<div
-			class="modal fade"
-			id="registerModal"
-			tabindex="-1"
-			aria-labelledby="registerModalLabel"
-			aria-hidden="true"
-		>
+		<div class="modal fade" id="registerModal" tabindex="-1" aria-labelledby="registerModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered">
-				<div class="rsn-modal-content">
-					<div class="rsn-modal-header">
-						<h5 class="modal-title" id="registerModalLabel">
-							Open Your Account
-						</h5>
-						<button
-							type="button"
-							class="btn-close btn-close-white"
-							data-bs-dismiss="modal"
-							aria-label="Close"
-						></button>
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="registerModalLabel">Open Your Account</h5>
+						<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
-					<div class="rsn-modal-body" id="registerForm">
+					<div class="modal-body" id="registerForm">
 						<form id="registrationForm">
 							<div class="mb-3">
-								<input
-									type="text"
-									class="rsn-form-control"
-									id="registerName"
-									placeholder="Your Full Name"
-									required
-								/>
+								<input type="text" class="form-control" id="registerName" placeholder="Your Full Name" required>
 							</div>
 							<div class="mb-3">
-								<input
-									type="email"
-									class="rsn-form-control"
-									id="registerEmail"
-									placeholder="Email Address"
-									required
-								/>
+								<input type="email" class="form-control" id="registerEmail" placeholder="Email Address" required>
 							</div>
 							<div class="mb-3">
-								<input
-									type="password"
-									class="rsn-form-control"
-									id="registerPassword"
-									placeholder="Password"
-									required
-								/>
+								<input type="password" class="form-control" id="registerPassword" placeholder="Password" required>
 							</div>
 							<div class="mb-3">
-								<input
-									type="date"
-									class="rsn-form-control"
-									id="registerDob"
-									required
-								/>
-								<small class="text-muted"
-									>You must be 18 or older to join</small
-								>
+								<input type="date" class="form-control" id="registerDob" required>
+								<small class="text-muted">You must be 18 or older to join</small>
 							</div>
 							<div class="form-check mb-3">
-								<input
-									class="form-check-input"
-									type="checkbox"
-									id="termsCheck"
-									required
-								/>
+								<input class="form-check-input" type="checkbox" id="termsCheck" required>
 								<label class="form-check-label" for="termsCheck">
-									I accept the <a href="./terms.html">User Terms</a> and
-									<a href="./policy.html">Privacy Notice</a>
+									I accept the <a href="terms.php.html">User Terms</a> and <a href="policy.php.html">Privacy Notice</a>
 								</label>
 							</div>
-							<button type="submit" class="rsn-btn-submit">Sign Up</button>
+							<button type="submit" class="btn btn-submit">Sign Up</button>
 						</form>
 					</div>
-					<div class="rsn-modal-body d-none" id="registerSuccess">
-						<div class="rsn-success-message">
-							<div class="rsn-success-icon">
+					<div class="modal-body d-none" id="registerSuccess">
+						<div class="success-message">
+							<div class="success-icon">
 								<i class="fas fa-check-circle"></i>
 							</div>
 							<h3>Registration Complete!</h3>
-							<p>
-								Your account is being reviewed. We'll email you soon. Please
-								check your inbox and spam folder to confirm your account.
-							</p>
-							<button class="rsn-btn-submit" data-bs-dismiss="modal">
-								Close
-							</button>
+							<p>Your account is being reviewed. We'll email you soon. Please check your inbox and spam folder to confirm your account.</p>
+							<button class="btn btn-submit" data-bs-dismiss="modal">Close</button>
 						</div>
 					</div>
 				</div>
 			</div>
 		</div>
 
-		<div
-			class="modal fade"
-			id="authModal"
-			tabindex="-1"
-			aria-labelledby="authModalLabel"
-			aria-hidden="true"
-		>
+		<div class="modal fade" id="authModal" tabindex="-1" aria-labelledby="authModalLabel" aria-hidden="true">
 			<div class="modal-dialog modal-dialog-centered">
-				<div class="rsn-modal-content">
-					<div class="rsn-modal-header">
-						<h5 class="modal-title" id="authModalLabel">
-							Sign In to Your Account
-						</h5>
-						<button
-							type="button"
-							class="btn-close btn-close-white"
-							data-bs-dismiss="modal"
-							aria-label="Close"
-						></button>
+				<div class="modal-content">
+					<div class="modal-header">
+						<h5 class="modal-title" id="authModalLabel">Sign In to Your Account</h5>
+						<button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
 					</div>
-					<div class="rsn-modal-body" id="loginForm">
+					<div class="modal-body" id="loginForm">
 						<form id="loginForm">
 							<div class="mb-3">
-								<input
-									type="email"
-									class="rsn-form-control"
-									id="loginEmail"
-									placeholder="Email Address"
-									required
-								/>
+								<input type="email" class="form-control" id="loginEmail" placeholder="Email Address" required>
 							</div>
 							<div class="mb-3">
-								<input
-									type="password"
-									class="rsn-form-control"
-									id="loginPassword"
-									placeholder="Password"
-									required
-								/>
+								<input type="password" class="form-control" id="loginPassword" placeholder="Password" required>
 							</div>
 							<div class="mb-3 form-check">
-								<input
-									type="checkbox"
-									class="form-check-input"
-									id="rememberMe"
-								/>
-								<label class="form-check-label" for="rememberMe"
-									>Keep me signed in</label
-								>
+								<input type="checkbox" class="form-check-input" id="rememberMe">
+								<label class="form-check-label" for="rememberMe">Keep me signed in</label>
 							</div>
-							<button type="submit" class="rsn-btn-submit">Sign In</button>
+							<button type="submit" class="btn btn-submit">Sign In</button>
 							<div class="text-center mt-3">
-								<a href="./?age-verification=true" class="text-muted"
-									>Forgot your password?</a
-								>
+								<a href="index.html#" class="text-muted">Forgot your password?</a>
 							</div>
 						</form>
 					</div>
-					<div class="rsn-modal-body d-none" id="loginPending">
-						<div class="rsn-success-message">
-							<div class="rsn-success-icon">
+					<div class="modal-body d-none" id="loginPending">
+						<div class="success-message">
+							<div class="success-icon">
 								<i class="fas fa-hourglass-half"></i>
 							</div>
 							<h3>Account Under Review</h3>
-							<p>
-								Your account is still being processed. This usually takes 1-2
-								business days. We'll notify you by email when your account is
-								ready.
-							</p>
-							<button class="rsn-btn-submit" data-bs-dismiss="modal">
-								Close
-							</button>
+							<p>Your account is still being processed. This usually takes 1-2 business days. We'll notify you by email when your account is ready.</p>
+							<button class="btn btn-submit" data-bs-dismiss="modal">Close</button>
 						</div>
 					</div>
 				</div>
@@ -791,3 +703,4 @@
 		<script src="./assets/js/main.js"></script>
 	</body>
 </html>
+
